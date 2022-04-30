@@ -1,0 +1,106 @@
+.why-services {
+  
+    text-align: center;
+   
+   }
+   .why-services  h1{
+       
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 2.9rem;
+   line-height: 7rem;
+   }
+   .why-container{
+     padding: 3rem 5rem 0 3rem;
+     position: relative;
+     background-color: #FDF9D2;;
+     border-top:  1rem solid #FFDE59;
+     border-bottom:  1rem solid #FFDE59;
+   
+   }
+   .why-list-services{
+       width: 100%;
+       justify-content: space-between;
+      
+       display: flex;
+       flex-direction: row;
+       padding-top: 0.5rem;
+       padding-bottom: 1rem;
+   }
+   .why-list-services .why-service-box {
+    padding: 4rem 2rem 1.5rem 1.5rem;
+    max-width: 350px;
+     position: relative;
+     margin: 0 0.8rem;
+     transition: box-shadow .2s linear;
+     background: #FFFFFF;
+     box-shadow: inset 4px -4px 4px rgba(0, 0, 0, 0.25), inset 4px -4px 4px rgba(0, 0, 0, 0.25);
+   }
+   .why-list-services .why-service-box:hover {
+       box-shadow: 0 16px 15px -15px #b3a431;
+     }
+   .why-list-services .why-service-box img {
+     position: absolute;
+     height: 80px;
+     width: 80px;
+     color: #FFF;
+     top: 0%;
+     left: 40%;
+     transform: translate(0%,-40%);
+     background-color: rgb(253, 251, 251);
+     box-shadow: inset 4px -4px 4px rgba(0, 0, 0, 0.25), inset 4px -4px 4px rgba(0, 0, 0, 0.25);
+     border-radius: 50%;
+   }
+   .why-list-services .why-service-box .why-text {
+       font-size: .9rem;
+       margin-bottom: 1rem;
+       color: #a0a0a0;
+     }
+     .why-list-services .why-service-box h3{
+       font-family: 'Poppins';
+       font-style: normal;
+       font-weight: 600;
+       font-size: 18px;
+       line-height: 27px;
+       margin-bottom: 0.4rem;
+       color: #3E3F41;
+       
+     }
+     @media screen and (max-width: 840px)
+     {
+        .why-list-services .why-service-box {
+            /* padding: 4rem 1.2rem 1rem 1rem; */
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%,0);
+            padding: 4rem 4rem;
+            line-height: 1.4;
+            align-items: center;
+            text-align: center;
+             position: relative;
+        
+             margin: 2.6rem 0;
+             transition: box-shadow .2s linear;
+             background: #FFFFFF;
+             box-shadow: inset 4px -4px 4px rgba(0, 0, 0, 0.25), inset 4px -4px 4px rgba(0, 0, 0, 0.25);
+           }
+           .why-list-services{
+               position: relative;
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+        }
+        .why-list-services .why-service-box .why-text {
+            font-size: 1.4rem;
+            margin: 1rem 0;
+            margin-bottom: 1rem;
+            color: #a0a0a0;
+          }
+    
+     }

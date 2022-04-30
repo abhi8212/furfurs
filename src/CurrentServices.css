@@ -1,0 +1,136 @@
+.column-current {
+
+    display: flex;
+      width: 100%;
+      height: auto;
+      background: linear-gradient(89.86deg, rgba(255, 255, 255, 0) 29.23%, #FFDE59 99.89%);
+      margin: 2rem 0;
+
+  }
+
+
+  .row-curr {
+    
+      width: 100%;
+      position: relative;
+      margin: 0 -5px;
+      margin-bottom: 10rem;
+    }
+
+  .row-curr:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row-curr  h2{
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 7.6rem;
+      font-size: 2rem;
+  }
+  .row-curr  h2 img{
+      /* background-color: #FFDE59; */
+      /* padding-top: 1rem; */
+      padding-left: 10px; 
+      align-items: center;
+  }
+
+
+
+
+ .card-current {
+
+     margin: 1rem 0;
+     padding: 3rem;
+    text-align: center;
+   }
+  .img-services{
+      width: 50%;
+      text-align: center;
+  }
+  .date-div{
+      display: flex;
+      flex-direction: column;
+  }
+  .date-div input
+  {
+      margin-left:6rem;
+      width: 8rem;
+      border-radius: 4px;
+  }
+  .date-div label
+  {
+      margin: 0.5rem 0;
+  }
+.dash-btn{
+    margin: 0.8rem 0.6rem;
+}
+#shifts{
+       margin-left: 4.5rem;
+       border: 1px solid black;
+       padding-bottom: 0.9px;
+}
+
+.foot-curr img{
+    position: absolute;
+    left: 94%;
+    top: 0%;
+    width: 8rem;
+    transform: translate(-94%,0);
+    z-index: 1;
+
+  } 
+  .foot-curr-b img{
+    position: absolute;
+    width: 8rem;
+    z-index: 5;
+    top: 90%;
+    left: 3%;
+
+  }
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 862px) {
+    .column-current {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
+      size: 62%;
+    }
+    .img-services{
+        width: 100%;
+        text-align: center;
+    }
+    .foot-curr img{
+        display: none;
+    }
+    .foot-curr-b img{
+        display: none;
+    }
+    .row-curr  h2{
+        margin-bottom: 0rem;
+        font-size: 2rem;
+    }
+    
+
+  .row-curr {
+    
+   
+    margin-bottom: 1.5rem;
+  }
+  }
+  @media screen and (max-width: 438px){
+    .date-div input{
+        margin-left: 3rem;
+        width: 6rem;
+    }
+    #shifts{
+        margin-left: 2rem;
+ }
+ .dash-btn{
+    margin: 0.8rem 0.6rem;
+    font-size: 0.6rem;
+}
+
+}

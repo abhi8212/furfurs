@@ -1,0 +1,75 @@
+.packages-pack{
+    position: relative;
+}
+.packages-pack h2{
+    font-family: 'Poppins';
+    font-style: normal;
+   font-weight: 600;
+   font-size: 3vw;
+   line-height: 7vw;
+   text-align: center;
+   color: #3E3F41;
+}
+.back-image-pack{
+    background-color: #FFDE59;
+}
+.back-image-pack img{
+    position: relative;
+    width: 100%;
+    opacity: 0.77;
+    height: 26vw;
+    background-size: cover;
+}
+.offer-box-pack{
+position: absolute;
+width: 30%;
+ height: 12vw;
+ top:67%;
+ left: 100%;
+ transform: translate(-100%,-67%);
+background: #FFDE59;
+box-shadow: inset 4px -4px 4px rgba(0, 0, 0, 0.25), inset 4px -4px 4px rgba(0, 0, 0, 0.25);
+}
+.offer-box-pack .contents-pack .ho-pack{
+    line-height: 2.5vw;
+}
+.contents-pack{
+    margin: 3vw;
+}
+.offer-box-pack .contents-pack h3{
+    line-height: 1px;
+}
+.books-pack{
+    text-align: right;
+    margin-right: 2vw;
+    color: aliceblue;
+}
+.books-pack a{
+   
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 1.5vw;
+line-height: 1.5rem;
+color: #3E3F41;
+}
+.books-pack a:hover{
+    color: brown;
+}
+@media screen and (max-width:1025px){
+    html{
+        font-size: 62%;
+    }
+    .back-image-pack img{
+        height: 37vw;
+    }
+    .contents-pack .ho-pack{
+        font-size: 12px;
+    }
+    .contents-pack .ht-pack{
+        font-size: 9px;
+    }
+    .contents-pack{
+        margin: 2vw;
+    }
+}

@@ -1,0 +1,56 @@
+.services{
+    width: 100%;
+    
+}
+.top-boxes{
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+ .top-box{
+    width:10vw;
+    height: 10vw;
+    max-width: 350px;
+   position: relative;
+   transition: box-shadow .2s linear;
+   background: #ebe6cb;
+   text-align: center;
+   box-shadow: inset 4px -4px 4px rgba(0, 0, 0, 0.25), inset 4px -4px 4px rgba(0, 0, 0, 0.25);
+} 
+.top-box img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 60%; 
+}
+.top-box-main p{
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width:620px){
+    .top-box-main p{
+        font-size: 2.5vw;
+    }
+   
+
+}
+@media screen and (max-width:1025px){
+    .top-box-main p{
+        font-size: 1.8vw;
+    }
+}

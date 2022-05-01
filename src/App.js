@@ -17,7 +17,11 @@ import Dashboard from './components/Dashboard';
 import CurrentServices from './components/CurrentServices';
 import WhyChoose from './components/WhyChoose';
 
-
+import DogVetconseltation from './components/DogVetconseltation';
+import DogBoarding from './components/DogBoarding';
+import DogGrooming from './components/DogGrooming';
+import DogTraining from './components/DogTraining';
+import ServicesHeader4 from './components/ServicesHeader4';
 const App = () => {
   return (
     <>
@@ -34,6 +38,11 @@ const App = () => {
                  <Route exact path='/drop' element={<EmailDrop/>}></Route>
                  <Route exact path='/c' element={<CurrentServices/>}></Route>
                  <Route exact path='/why' element={<WhyChoose/>}></Route>
+                 <Route exact path='/services/boarding' element={<DogBoarding/>}></Route>
+                 <Route exact path='/services/grooming' element={<DogGrooming/>}></Route>
+                 <Route exact path='/services/training' element={<DogTraining/>}></Route>
+
+                 <Route exact path='/services/consultation' element={<><DogVetconseltation/></>}></Route>
                  
                  
           </Routes>

@@ -1,0 +1,35 @@
+.tcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+ background-color: antiquewhite;
+ margin-block: 15%;
+ margin-bottom: 80px;
+}
+.img-sec{
+    width : 25%;
+    height : 25%;
+    transform: scale(1.5);
+    padding :5px;
+    border-radius: 100%;
+    border: 1px dashed black;
+    /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23EC3463' stroke-width='8' stroke-dasharray='50%25%2c 13%25' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e"); */
+border-radius: 1000%;
+}
+.text-sec{
+width : 50%;
+text-align: left;
+
+
+}
+@media screen and (max-width:750px) {
+.tcard{
+    flex-direction: column;
+}
+.text-sec{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+}

@@ -1,0 +1,119 @@
+.App {
+    text-align: center;
+  
+  }
+  .jumbotron{
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  .svgbox{
+    overflow-x: hidden;
+    
+  }
+  .jumbotron-conatiner{
+  
+    position: absolute;
+    top: 0;
+  }
+  .jumbotron-title{
+    
+  
+    text-align: left;
+  font-weight: 500;
+  font-size: 5vw;
+  color: #3E3F41;
+  
+  }
+  .CostCardCont{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: .33fr .33fr .33fr;  
+  row-gap: 40px;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .CostCardCont{
+      justify-content: center;
+  grid-template-columns: .5fr .5fr;  
+  
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .CostCardCont{
+      justify-content: center;
+  grid-template-columns: 1fr;  
+  
+    }
+  }
+  
+  .j-textsec{
+    position: absolute;
+    width : 50vw;top:8%;
+    left: 5%;
+    
+  }
+  .j-img{
+  position: absolute;
+  transform: scale(1.5);
+  top : -9vw;
+  left: 45vw;
+  width: 40vw;
+  }
+  .j-blob{
+  position: absolute;
+  top:-28vw;
+    left: 50%;width : 70vw;
+  }
+  .j-btn{
+    background-color: #3E3F41;
+    width: max-content;
+    border-radius: 2vw;
+    padding-inline: 4vw;
+    padding-block: 1vw;
+    color: #FFE96E ;
+    font-size: 1vw;
+  }
+  
+  .svgbox2{
+    position: absolute;
+    top: 0;
+  
+    
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

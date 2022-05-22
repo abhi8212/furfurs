@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React ,{useState,useEffect} from 'react'
  import '../Navbar.css'
  import 'bootstrap/dist/css/bootstrap.min.css';
  import Button from '@mui/material/Button';
@@ -9,6 +9,20 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [islogged,setIslogged] = React.useState(false);
+  useEffect(() => {
+  if(localStorage.getItem("name").length != 1)
+  setIslogged(true);
+  
+    return () => {
+    
+    }
+  }, [])
+  const logout = ()=>{
+    setIslogged(false)
+    localStorage.setItem('name',"S");
+
+  }
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -64,7 +78,7 @@ const Navbar = () => {
             <li><a href="#">Products</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><button className="login-button" href="#">Login</button></li>
+            <li><button className="login-button" href="/login">Login</button></li>
             <li><button className="join-button" href="#">Register</button></li>
         </ul>
         </div>
@@ -119,8 +133,12 @@ const Navbar = () => {
             <li><a href="#">Products</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><button className="login-button" href="#">Login</button></li>
-            <li><button className="join-button" href="#">Register</button></li>
+           {
+             !islogged?<>  <a href = "/login">   <li><button className="login-button">Login</button></li> </a>
+             <li><button className="join-button" href="#">Register</button></li></>:
+             <><p onClick={logout}>hello {localStorage.getItem("name")} </p></>
+           }
+       
             
         </ul>
         <div class = "ham">
